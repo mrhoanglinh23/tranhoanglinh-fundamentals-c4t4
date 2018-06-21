@@ -1,0 +1,20 @@
+What is Boolean? Write down 3 different expression that results a Boolean type (i.e. 5 == 6)
+- Boolean is either true or false.
+- Ex:
++ if (someDecision)
+{
+    checker = true;
+}
+if(checker)
+{
+    //some stuff
+}
+
++ def pair_13(nums) {
+  for i in range(len(nums) - 1):
+    if nums[i]==13 and nums[i+1]==13:
+      return True
+      
++ >>> type(True)
+<class ’bool’>
+>>> type(true)
