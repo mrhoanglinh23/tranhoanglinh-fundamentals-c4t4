@@ -1,7 +1,18 @@
-for i in range(5)
-    for i in range(6)
-        forward(100)
-        left(90)
-    right(60)
+from turtle import *
 
+speed()
+shape("turtle")
+color("red")
+
+for c in range(4):
+    left(30)
+    forward(100)
+    right(60)
+    forward(100)
+    right(120)
+    forward(100)
+    right(60)
+    forward(100)
+    right(60)
+    
 mainloop()

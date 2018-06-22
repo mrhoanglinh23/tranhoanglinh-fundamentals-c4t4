@@ -1,15 +1,14 @@
-x = input("Enter a number")
+height = float(input("Enter height in cm: "))
+weight = float(input("Enter weight in kg: "))
+BMI = weight/ (height*height)
 
 if BMI < 16:
-    print("Severely underweight")
-elif BMI 16 < x <18.5:
-    pass
-    print ("Underweight")
-elif BMI 18.5 < x < 25:
-    print("Normal")
-elif BMI 25 < x < 30:
-    print("Overweight")
-else BMI > 30:
-    
-
-    
+    print("severely underweight")
+elif 16 < BMI < 18.5:
+    print("underweight")
+elif 18.5 < BMI < 25:
+    print("normal")
+elif 25 < BMI < 30:
+    print("overweight")
+elif BMI > 30:
+    print("obese")

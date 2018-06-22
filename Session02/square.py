@@ -4,7 +4,7 @@ shape("turtle")
 color("green")
 for i in range(3):
     for _ in range(4):
-        forward(10 + i * 20)
+        forward(10 + i * 10)
         left(90)
     right(60)
     forward(19)
