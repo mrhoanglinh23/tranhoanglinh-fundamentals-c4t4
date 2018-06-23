@@ -1,7 +1,13 @@
 1. What is Boolean? Write down 3 different expression that results a Boolean type (i.e. 5 == 6)
 - Boolean is either true or false.
 - Ex:
-
+>>> obj = []
+>>> hasattr(obj, 'append')
+True
+>>> isinstance(obj, list)
+True
+>>> isinstance(obj, tuple)
+False
 
 
 2. What is a flow chart?
