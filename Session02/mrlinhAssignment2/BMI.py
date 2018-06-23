@@ -1,4 +1,5 @@
-height = float(input("Enter height in cm: "))
+heightcm = float(input("Enter height in cm: "))
+height = (heightcm) /100
 weight = float(input("Enter weight in kg: "))
 BMI = weight/ (height*height)
 
@@ -10,5 +11,5 @@ elif 18.5 < BMI < 25:
     print("normal")
 elif 25 < BMI < 30:
     print("overweight")
-elif BMI > 30:
+else:
     print("obese")

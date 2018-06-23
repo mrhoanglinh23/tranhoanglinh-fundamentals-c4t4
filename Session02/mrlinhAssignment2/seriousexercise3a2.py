@@ -1,3 +1,3 @@
-number =int(input("enter a number: "))
-for i in range(0, 18, 1):
+n =int(input("enter positive number: "))
+for i in range(0, n-1):
     print(i, end=" ")

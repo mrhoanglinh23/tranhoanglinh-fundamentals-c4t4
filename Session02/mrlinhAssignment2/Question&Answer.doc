@@ -2,23 +2,6 @@
 - Boolean is either true or false.
 - Ex:
 
-# list mode
-+ num = [0, 2, 5, 4, 6, 7]
- 
-print (num[0])
-print (num[2:])
-print (len(num))
-print (num + [8, 9])
-
-# tuple mode      
-+ fruits = ("oranges", "apples", "bananas")
-fruits = "oranges", "apples", "bananas"
-print (fruits)
-
-# none mode
-+ def function():
-   pass
-print (function())
 
 
 2. What is a flow chart?
@@ -29,9 +12,13 @@ print (function())
 Write a piece of code that uses nested conditionals  
 -	One conditional can also be nested within another.
 -	A piece of code that uses nested conditionals:
-if age < 10:
-  print("Not teen")
-elif 10 < age < 18:
-  print("Teenager")
-else age > 18:
-  print("Adult")
+x = 10
+y = 10
+
+if x < y:
+    print("x is less than y")
+else:
+    if x > y:
+        print("x is greater than y")
+    else:
+        print("x and y must be equal")
