@@ -1,10 +1,10 @@
+import math
 n = int(input("Enter a square number: "))
 
-
-while True:
-    if n**(1/2)== 0:
-        print("That's a square number.")
-        break
-    else:
-        print("Not a square number")
-        break
+i = int(math.sqrt(n))
+if(n == i*i):
+  print("Square number")
+  
+else:
+  print("Not Square Number")
+  

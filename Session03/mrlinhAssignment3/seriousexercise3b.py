@@ -1,14 +1,18 @@
-n = int(input("Enter a number: "))  
+number = int(input("Enter a prime number: "))  
   
-if n > 1:  
-   for i in range(2,n):  
-       if (n % i) == 0:  
-           print(n,"is not a prime number")    
-           break  
-   else:  
-       print(n,"is a prime number")
+if number < 2:
+    print(number, "Not a prime number")
+elif number == 2:
+    print( number, "It's a prime number")
+else:
+    isPrimeNumber = True;
+    for i in range(2, number):
+        if number % i == 0:
+            isPrimeNumber = False;
+            break
         
-         
-else:  
-   print(n,"is not a prime number") 
+    if isPrimeNumber == True:
+        print( number, " Is a prime number")
+    else:
+        print(number, "Is Not a prime number")
     
