@@ -17,6 +17,6 @@ print(favs)
 favs[pos - 1] = update_favs
 
 for index, fav in enumerate(favs):
-     print(index + 1, fav, sep=". ")
+     print(index + 1, favs, sep=". ")
 print("* " * 20)
 

@@ -12,7 +12,7 @@ menu = ["pizza", "noodle", "rice", "bread", "xôi gà", "trà sữa"]
 #delete 
 # del menu[0]
 # menu.pop(0)
-# menu.remove(menu[0])
+menu.remove(menu[0])
 
 print(*menu, sep=", ")
 #seperator
