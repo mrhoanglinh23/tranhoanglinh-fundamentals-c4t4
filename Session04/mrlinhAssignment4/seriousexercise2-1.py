@@ -10,9 +10,18 @@ n.insert(4, 8)
 n.remove(300)
 print(n)
 
-print("""MONTH 1:
-One month has passed, now here is my flock
-""")
+print("Month {0}: ","One month has passed, now here is my flock")
+
+
 for i in range(4):
-    for j in range(7):
-        n +=50
+    n[i] +=50
+    print(n)
+    print("Now my biggest sheep size",max(n),"let's shear it")
+    print ("after shearing, here is my flock")
+    print(n)
+
+nor = 0
+for j in range (7):
+    nor = size[i] + num
+ num = int(input("My flock has size in total:")))
+ print("I would get", num *2, "$")
