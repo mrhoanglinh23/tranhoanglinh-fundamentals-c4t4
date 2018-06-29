@@ -10,18 +10,24 @@ n.insert(4, 8)
 n.remove(300)
 print(n)
 
-print("Month {0}: ","One month has passed, now here is my flock")
+for i in range(3):
+    print("Month {0}".format(n))
+    print("One month has passed , now here is my flock")
+    new_sheep = [x+50 for x in n]
+    print (new_sheep)
 
+    max_sheep = max(new_sheep)
+    print ("Now my biggest sheep has size", max(new_sheep), "let's shear it")
 
-for i in range(4):
-    n[i] +=50
-    print(n)
-    print("Now my biggest sheep size",max(n),"let's shear it")
-    print ("after shearing, here is my flock")
-    print(n)
+    print ("After shearing, here is my flock: ")
+    index = new_sheep.index(max(new_sheep))
+    new_sheep[index] = 8
+    print (new_sheep)
+    
 
-nor = 0
-for j in range (7):
-    nor = size[i] + num
- num = int(input("My flock has size in total:")))
- print("I would get", num *2, "$")
+m = max(n)
+print("Now my biggest sheep size",m,"let's shear it")
+
+print("My flock has size in total: ", n)
+print("I would get", n, "* 2$ = ", n*2, "$")
+
