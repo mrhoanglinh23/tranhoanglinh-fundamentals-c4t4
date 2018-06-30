@@ -16,8 +16,6 @@ while True:
         delete = input("Delete postion:")
         del menu[2];
         print("Our items:", *menu, sep=", ")
-    else:
-        print("Okay then")
         break
     
         

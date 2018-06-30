@@ -3,14 +3,14 @@ n = [5, 7, 300, 90, 24, 50, 75]
 
 print(*n, sep=", ")
 
-print("Now my biggest sheep size",max(n),"let's shear it")
+print("Now my biggest sheep size",max(n),"let's shear it".format(n))
 
 print("After shearing, here is my flock")
-n.insert(4, 8)
+n.insert(3, 8)
 n.remove(300)
 print(n)
 
-for i in range(3):
+for i in range(1):
     print("Month {0}".format(n))
     print("One month has passed , now here is my flock")
     new_sheep = [x+50 for x in n]
@@ -29,5 +29,5 @@ m = max(n)
 print("Now my biggest sheep size",m,"let's shear it")
 
 print("My flock has size in total: ", n)
-print("I would get", n, "* 2$ = ", n*2, "$")
+print("I would get", m, "* 2$ = ", m*2, "$")
 
