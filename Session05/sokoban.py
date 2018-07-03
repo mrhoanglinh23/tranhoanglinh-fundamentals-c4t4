@@ -38,11 +38,12 @@ for y in range (map["size-y"]):
             print("P ", end="")    
         elif box_is_here == True:
             print("B ", end="")
-        else:
+        elif dest_is_here == True:
             print("- ", end="")
 
-        
+for move in range        
         u = input("Your move")
+
         
 
 
