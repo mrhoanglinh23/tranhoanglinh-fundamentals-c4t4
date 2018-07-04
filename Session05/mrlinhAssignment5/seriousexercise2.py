@@ -17,7 +17,7 @@ for key in price:
     print ("price:{} ".format(price[key]))
     print ("stock:{} ".format(stock[key]))
 
-for total in range(1):
-    total = price[key] * stock[key]
-    print("Total:", total)
+
+total = price[key] * stock[key]
+print("Total:", total)
     
