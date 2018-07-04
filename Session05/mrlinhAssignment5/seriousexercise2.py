@@ -11,6 +11,7 @@ stock = {
     "orange": 32,
     "pear": 15
 }
+
 for key in price:
     print(key)
     print ("price:{} ".format(price[key]))
@@ -18,6 +19,7 @@ for key in price:
 
 total = 0
 for total in price: 
-    total = 4 * 6
+    total = price[key] * stock[key]
+    total = total + price[key] * stock[key]
     print("Total:", total)
     

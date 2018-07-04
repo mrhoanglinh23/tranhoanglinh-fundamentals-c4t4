@@ -18,7 +18,7 @@ boxes = [
 
 for y in range (map["size-y"]):
     for x in range(map["size-x"]):
-
+        dest = input("Your move: ")
         box_is_here = False
         player_is_here = False
         dest_is_here = False
@@ -31,7 +31,7 @@ for y in range (map["size-y"]):
             player_is_here = True
 
         for dest in dest_is_here:
-            if x == dest['x'] and y == destroy['y']:
+            if x == dest['x'] and y == dest['y']:
                 dest_is_here = True
 
         if player_is_here == True:
@@ -41,8 +41,7 @@ for y in range (map["size-y"]):
         elif dest_is_here == True:
             print("- ", end="")
 
-for move in range        
-        u = input("Your move")
+
 
         
 
