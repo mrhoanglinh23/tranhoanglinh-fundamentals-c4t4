@@ -82,16 +82,11 @@ while playing:
 
             print()
 
-
-
     win = True
     for box in boxes:
         if box not in destination:
             win = False
-    
-    if win == True:
-        print("You Win")
-        break
+
     
     #input
     move = input("Your move: ").lower()
@@ -108,6 +103,7 @@ while playing:
     elif move == 'd':
         dx = 1
     elif move == 'z':
+        ("Undo Action")
         dx = -1
         dy = -1
     else:
@@ -123,5 +119,16 @@ while playing:
         if box['x'] == player['x'] and box['y'] == player['y']:
             box['x'] += dx
             box['y'] += dy
+        elif box['x'] == box ['y']:
+            box['x'] -= dx
+            box['y'] -= dy
+            
+
+    for obs in obstacle:
+        if obs['x'] == player['x'] and obs['y'] == player['y']:
+            obs['x'] += dx
+            obs['y'] += dy
+
+    
 
 
