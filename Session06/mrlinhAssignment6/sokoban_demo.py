@@ -46,6 +46,7 @@ obstacle = [
 
 playing = True
 
+check = True
 while playing:
     for y in range (map["size_y"]):
             for x in range(map["size_x"]):
@@ -115,9 +116,9 @@ while playing:
     if 0 <= player['x'] + dx < map['size_x'] and 0 <= player['y'] + dy < map['size_y'] :
             player['x'] += dx
             player['y'] += dy
-    elif 0 > box['x'] + dx > map['size_x'] and 0 > box['y'] + dy > map['size_y'] :
-            player['x'] -= dx
-            player['y'] -= dy
+    elif 0 > box['x'] - dx < map['size_x'] and 0 > box['y'] - dy < map['size_y'] :
+            box['x'] += dx
+            box['y'] += dy
     
     #boxes
     for box in boxes:
@@ -125,9 +126,8 @@ while playing:
             box['x'] += dx
             box['y'] += dy
 
+
     for obs in obstacle:
         if obs['x'] == box['x'] and obs['y'] == box['y']:
-            obs['x'] -= dx
-            obs['y'] -= dy
             print("Oops, Obstacle")
 
