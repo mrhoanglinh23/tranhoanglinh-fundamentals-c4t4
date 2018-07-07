@@ -87,7 +87,9 @@ while playing:
         if box not in destination:
             win = False
 
-    
+    if win == True:
+        print("You Win")
+        break
     #input
     move = input("Your move: ").lower()
 
@@ -102,33 +104,23 @@ while playing:
         dx = -1
     elif move == 'd':
         dx = 1
-    elif move == 'z':
-        ("Undo Action")
-        dx = -1
-        dy = -1
+    
     else:
         print("End Game")
         playing = False
         
-    
+    # player
     if 0 <= player['x'] + dx < map['size_x'] and 0 <= player['y'] + dy < map['size_y'] :
             player['x'] += dx
             player['y'] += dy
+    elif 0 => box['x'] + dx > map['size_x'] and 0 => box['y'] + dy > map['size_y'] :
+            player['x'] -= dx
+            player['y'] -= dy
     
+    #boxes
     for box in boxes:
         if box['x'] == player['x'] and box['y'] == player['y']:
             box['x'] += dx
             box['y'] += dy
-        elif box['x'] == box ['y']:
-            box['x'] -= dx
-            box['y'] -= dy
-            
-
-    for obs in obstacle:
-        if obs['x'] == player['x'] and obs['y'] == player['y']:
-            obs['x'] += dx
-            obs['y'] += dy
-
-    
-
+ 
 
