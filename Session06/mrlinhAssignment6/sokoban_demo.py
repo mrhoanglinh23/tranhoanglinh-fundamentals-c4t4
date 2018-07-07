@@ -95,6 +95,7 @@ while playing:
 
     dx = 0
     dy = 0
+    dz = 0
 
     if move == 'w':
         dy = -1
@@ -104,6 +105,7 @@ while playing:
         dx = -1
     elif move == 'd':
         dx = 1
+
     
     else:
         print("End Game")
@@ -113,7 +115,7 @@ while playing:
     if 0 <= player['x'] + dx < map['size_x'] and 0 <= player['y'] + dy < map['size_y'] :
             player['x'] += dx
             player['y'] += dy
-    elif 0 => box['x'] + dx > map['size_x'] and 0 => box['y'] + dy > map['size_y'] :
+    elif 0 > box['x'] + dx > map['size_x'] and 0 > box['y'] + dy > map['size_y'] :
             player['x'] -= dx
             player['y'] -= dy
     
@@ -122,5 +124,10 @@ while playing:
         if box['x'] == player['x'] and box['y'] == player['y']:
             box['x'] += dx
             box['y'] += dy
- 
+
+    for obs in obstacle:
+        if obs['x'] == box['x'] and obs['y'] == box['y']:
+            obs['x'] -= dx
+            obs['y'] -= dy
+            print("Oops, Obstacle")
 
