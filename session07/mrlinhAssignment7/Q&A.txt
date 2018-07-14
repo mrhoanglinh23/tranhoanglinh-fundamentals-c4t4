@@ -1,0 +1,5 @@
+- Why should we use functions at all
+We can make up any names we want for the functions we create, except that we can’t use a
+name that is a Python keyword, and the names must follow the rules for legal identifiers
+
+- How to define/declare a function?
