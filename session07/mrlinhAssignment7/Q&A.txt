@@ -3,3 +3,23 @@ We can make up any names we want for the functions we create, except that we can
 name that is a Python keyword, and the names must follow the rules for legal identifiers
 
 - How to define/declare a function?
+Step 1: Declare the function with the keyword def followed by the function name.
+Step 2: Write the arguments inside the opening and closing parentheses of the function, and end the declaration with a colon.
+Step 3: Add the program statements to be executed.
+
+- How to call/use a function?
+Inside the Python function, 
+the value to be returned is given by the expression in the return statement.
+
+- What is return, why and how do we use it?
+e return statement causes your function to exit and hand back a value to its
+ caller. The point of functions in general is to take in inputs and return something. The return statement is 
+used when a function is ready to return a value to its caller.
+
+- Do we have to use return in every function?
+Yes, we can use return in every function
+
+- What are function arguments/parameters, why and how we use it?
+
+- How to use function from a different file other than our currently working file?
+

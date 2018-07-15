@@ -1,2 +1,5 @@
-for i in range(3):
-    print("Hello World")
+def helloName():
+        print("Hello World")
+helloName()
+helloName()
+helloName()
